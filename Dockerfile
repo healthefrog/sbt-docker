@@ -1,4 +1,4 @@
-FROM oracle/graalvm-ce:19.3.1-java11
+FROM ghcr.io/graalvm/graalvm-ce:ol8-java11-21.0.0.2
 
 # Install RDS certificates and update the store
 ADD https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem /etc/pki/ca-trust/source/anchors/rds-combined-ca-bundle.crt
